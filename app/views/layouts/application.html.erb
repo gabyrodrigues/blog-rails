@@ -11,10 +11,15 @@
 
   <body>
     <%= render 'shared/navbar' %>
-    <div class="container">
-      <div class='row'>
-        <%= yield %>
+    <section class="main-content columns is-fullheight" role="navigation" aria-label="main navigation">
+      <%= render 'shared/sidenav' %>
+      <div class="column is-10">
+        <div class="container">
+          <div class='row'>
+            <%= yield %>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
