@@ -40,6 +40,10 @@
             font-family: 'Muli', sans-serif;
             font-size: 20px;
             font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        > .description + .description {
             margin-bottom: 40px;
         }
     }
