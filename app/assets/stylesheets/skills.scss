@@ -1,0 +1,31 @@
+.dev-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    padding-left: 0;
+
+    > .item {
+        i {
+            color: #2fa092;
+        }
+    }
+
+    > .item + .item {
+        margin-left: 20px;
+    }
+}
+
+.skills-list {
+    margin-left: 20px;
+
+    > .item {
+        list-style-type: none;
+        margin-left: 30px !important;
+        padding-left: 0;
+        position: relative;
+    }
+
+    > .item + .item {
+        margin-top: 10px;
+    }
+}
