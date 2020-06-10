@@ -1,5 +1,5 @@
 </br></br>
-<h1 class="title">Publicações</h1>
+<h1 class="title">Posts</h1>
 </br>
 
 <% @posts.each do |post| %>
@@ -17,7 +17,7 @@
               <a href="<%= post_path(id: post.id) %>"><p class="title is-4"><%= post.author %></p></a>
             </div>
           </div>
-          <p>Autor: <%= post.author %> - <%= post.created_at.strftime("%d/%m/%Y") %></p>
+          <p>Author: <%= post.author %> - <%= post.created_at.strftime("%d/%m/%Y") %></p>
         </div>
       </div>
     </div>
