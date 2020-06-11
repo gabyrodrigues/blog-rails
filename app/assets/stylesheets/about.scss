@@ -20,10 +20,17 @@
         > .info {
             color: #6c757d;
             display: flex;
+            flex-wrap: wrap;
             font-family: 'Saira Extra Condensed', sans-serif;
             font-size: 22px;
             font-weight: 500;
+            margin-bottom: 20px;
             text-transform: uppercase;
+
+            p {
+                margin-bottom: 0;
+                white-space: nowrap;
+            }
 
             > .link {
                 color: #2fa092;
