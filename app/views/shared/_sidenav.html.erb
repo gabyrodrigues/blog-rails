@@ -1,15 +1,22 @@
-<aside class="column sidenav is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
-    <a class="navbar-brand js-scroll-trigger" href="#about">
-        <span class="name">Gabriely Rodrigues</span>
-        <span class="image-wrapper">
-            <%= image_tag("gaby.jpeg", class: "image", alt: "Gabriely Rodrigues")%>
-        </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-list">
+<aside class="column sidenav is-2-desktop is-12-mobile is-fullheight section" id="navbar">
+
+    <div class="nav-wrapper">
+        <a class="navbar-name js-scroll-trigger" href="/">
+            <span class="name">Gabriely Rodrigues</span>
+            <span class="image-wrapper">
+                <%= image_tag("gaby.jpeg", class: "image", alt: "Gabriely Rodrigues")%>
+            </span>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" onclick="openMenu()">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+        <ul class="list">
             <li class="item">
                 <a class="link js-scroll-trigger" href="/">blog</a>
             </li>
@@ -51,3 +58,11 @@
     
 
 </aside>
+
+<script>
+    function openMenu() {
+        let nav = document.getElementById("navbar");
+
+        nav.classList.toggle("responsive");
+    }
+</script>

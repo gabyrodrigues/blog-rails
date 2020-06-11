@@ -1,25 +1,26 @@
-</br></br>
-<h1 class="title">Posts</h1>
-</br>
+<div class="post-section">
+  <h1 class="title">Posts</h1>
+  </br>
 
-<% @posts.each do |post| %>
-  <div class="columns">
-    <div class="column is-four-fifths">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-full is-marginless is-3by1">
-            <%= image_tag post.featured_image %>
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <a href="<%= post_path(id: post.id) %>"><p class="title is-4"><%= post.author %></p></a>
-            </div>
+  <% @posts.each do |post| %>
+    <div class="columns">
+      <div class="column is-four-fifths">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-full is-marginless is-3by1">
+              <%= image_tag post.featured_image %>
+            </figure>
           </div>
-          <p>Author: <%= post.author %> - <%= post.created_at.strftime("%d/%m/%Y") %></p>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <a href="<%= post_path(id: post.id) %>"><p class="title is-4"><%= post.author %></p></a>
+              </div>
+            </div>
+            <p>Author: <%= post.author %> - <%= post.created_at.strftime("%d/%m/%Y") %></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>
